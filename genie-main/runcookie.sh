@@ -12,7 +12,7 @@ echo ""
 # CHANGE THIS FOR INSTALLATIONS OTHER THAN IN $HOME
 # SET THE SAME AS IN user.mak AND user.sh
 # set home directory
-HOMEDIR=$HOME
+HOMEDIR=/scratch/rgs1e22/
 #####################################################################
 # set output directory
 OUTPUTDIR=$HOMEDIR/cgenie_output
@@ -375,7 +375,7 @@ echo ">> Here we go ..."
 echo ""
 cd $BINARYPATH
 # test for change of base-config
-if test -e 'current_config.dat' 
+if test -e 'current_config.dat'
 then
     current_config=$(<'current_config.dat')
     if [ "$current_config" != "$MODELID" ]; then
