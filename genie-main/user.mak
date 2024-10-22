@@ -83,9 +83,11 @@ else ifeq ($(FNETCDF),eevee)
   NETCDF_DIR=/share/apps/netcdf
 else
   ### DEFAULT ###
-  NETCDF_DIR=/usr/local
+  #NETCDF_DIR=/usr/local
   ### Mac (example) ###
   #NETCDF_DIR=/usr/local/Cellar/netcdf/4.9.2_1
+  ### RGS HPC - Iridis/RedHat ###
+  NETCDF_DIR=$(HOME)
 endif
 
 NETCDF_NAME=netcdf
