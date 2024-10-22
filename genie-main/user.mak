@@ -86,7 +86,7 @@ else
   #NETCDF_DIR=/usr/local
   ### Mac (example) ###
   ### RGS HPC - Iridis/RedHat ###
-  NETCDF_DIR=$(HOME)
+  NETCDF_DIR=/scratch/rgs1e22/cgenie.cookie/
 endif
 
 NETCDF_NAME=netcdf
